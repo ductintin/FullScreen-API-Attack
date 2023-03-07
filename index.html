@@ -1,0 +1,766 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Fullscreen API Attack</title>
+  <meta name="description" content="">
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/facebox.css">
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+
+  
+
+
+ 
+  <div class="fullHeader">
+        <div class="header">
+          <div id="header-left">
+            <div class="language">
+              <a href="" title="Tiếng Việt">Vn</a>|
+              <a href="" title="English">En</a>
+            </div>
+  
+            <form id="cse-search-box" action="">
+              <div class="fl">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm"
+                  name=""
+                  id=""
+                  style="width: 179px"
+                />
+              </div>
+              <div class="fl b_img">
+                <button name="sa" type="submit" id="replacement-2"></button>
+              </div>
+            </form>
+  
+            <div class="sitemap">
+              <a href="">Sitemap</a><a href="">Địa điểm ATM</a
+              ><a href="">Contact Center: 1900 558 868 / (84) 24 3941 8868</a>
+            </div>
+          </div>
+  
+          <div id="header-right">
+            <a href="" class="spoofLink">
+              <img
+                width="213"
+                height="76"
+                src="/img/logo.png"
+                alt=""
+                title="Ngân Hàng TMCP Công Thương Việt Nam - VietinBank"
+              />
+            </a>
+          </div>
+  
+          <div style="clear: both"></div>
+        </div>
+      </div>
+  
+      <div class="clear"></div>
+  
+      <div class="container-menu">
+        <div id="menuWrap">
+          <div class="menu-left"></div>
+          <div id="menu">
+            <ul>
+              <li class="menu-li">
+                <a href="">
+                  <img
+                    src="/img/home_d.png
+                  "
+                    alt="VietinBank"
+                    title="VietinBank"
+                  />
+                </a>
+              </li>
+              <li class="menu-li">
+                <a href="" class="level-one">Cá nhân</a>
+                <img class = "menu-child-arrow" src="/img/arrow.png" alt="">
+  
+                <div class="dropdown_3columns">
+                  <div class="dropdown_3columns_child">
+                    <div class="col_3">
+                      <h2>Sản phẩm và dịch vụ dành cho Cá nhân</h2>
+                    </div>
+                    <div class="col_3">
+                      <ul>
+                        <li>
+                          <div class="sub-icon">
+                            <img width="20" src="/img/uudai.png" alt="">
+                          </div>
+                          <div class="sub-text">
+                            <h3><a href="">Ưu đãi</a></h3>
+                          </div>
+                        </li>
+                        <li>
+                          <div></div>
+                          <div></div>
+                        </li>
+                        <li>
+                          <div></div>
+                          <div></div>
+                        </li>
+                        <li>
+                          <div></div>
+                          <div></div>
+                        </li>
+                        <li>
+                          <div></div>
+                          <div></div>
+                        </li>
+                        <li>
+                          <div></div>
+                          <div></div>
+                        </li>
+                        <li>
+                          <div></div>
+                          <div></div>
+                        </li>
+                        <li>
+                          <div></div>
+                          <div></div>
+                        </li>
+                        <li>
+                          <div></div>
+                          <div></div>
+                        </li>
+                        <li>
+                          <div></div>
+                          <div></div>
+                        </li>
+                        <li>
+                          <div></div>
+                          <div></div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="menu-li">
+                <a href="" class="level-one">Doanh Nghiệp</a>
+              </li>
+              <li class="menu-li">
+                <a href="" class="level-one">Kết nối thương mại</a>
+              </li>
+              <li class="menu-li">
+                <a href="" class="level-one">Nhà đầu tư</a>
+              </li>
+              <li class="menu-li">
+                <a href="" class="level-one">Ngân hàng đầu tư</a>
+              </li>
+              <li class="menu-li">
+                <a href="" class="level-one">Tuyển dụng</a>
+              </li>
+              <li class="menu-li">
+                <a href="" class="level-one">Giới thiệu</a>
+              </li>
+              <li class="menu-li">
+                <a href="" class="level-one">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-right"></div>
+        </div>
+      </div>
+  
+      <div id="wrapperID" class="wrapper">
+        <div class="container">
+          <div class="box4 clearfix">
+            <div id="header-news2">
+              <div id="header-lastest-news">
+                <span id="dt" class="fl padding00010">Thứ Bảy, 04/3/2023</span>
+                <h3>>></h3>
+              </div>
+              <div id="ticki" class="ticki">
+                <span
+                  ><p>
+                    Thời gian giao dịch phục vụ khách hàng tại các Chi nhánh, PGD
+                    của VietinBank - Từ thứ 2 tới thứ 6 (trừ ngày lễ, tết).
+                  </p></span
+                >
+              </div>
+            </div>
+          </div>
+  
+          <div class="box1 clearfix">
+            <div class="fl wid215">
+              <div class="tab-left upercase">
+                <a href="">Internet Banking</a>
+              </div>
+              <div class="ebank">
+                <form action="">
+                  <table
+                    cellspacing="0"
+                    cellpadding="0"
+                    border="0"
+                    style="width: 100%"
+                  >
+                    <tbody>
+                      <tr>
+                        <td width="100px">
+                          <a href="" class="i-ipay" alt="Đăng nhập iPay"></a>
+                        </td>
+                        <td>
+                          <input type="button" value="" id="OnlineRegister" />
+                          <input type="button" value="" id="submit-go" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="form_font">
+                          <p
+                            style="
+                              background: url(/img/bgDIV.png) no-repeat;
+                              height: 3px;
+                              width: 186px;
+                            "
+                          ></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td width="100px">
+                          <a
+                            href=""
+                            class="i-efast"
+                            alt="Đăng nhập VietinBank eFAST"
+                          >
+                          </a>
+                        </td>
+                        <td><input type="button" value="" id="submit-go" /></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="form_font">
+                          <p
+                            style="
+                              background: url(/img/bgDIV.png) no-repeat;
+                              height: 3px;
+                              width: 186px;
+                            "
+                          ></p>
+                        </td>
+                      </tr>
+                      <td width="100px">
+                        <a
+                          href=""
+                          class="i-trade-portal"
+                          alt="Đăng nhập VietinBank eFAST"
+                        >
+                        </a>
+                      </td>
+                      <td><input type="button" value="" id="submit-go" /></td>
+                    </tr>
+                    <tr>
+                      
+                      <tr>
+  
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+              </div>
+              <div
+                class="besps_holder besps_holder_215px_69px besps_holder_1472204026086"
+              >
+                <div
+                  style="z-index: 2; visibility: visible; opacity: 1"
+                  id="img_1472204026086_"
+                >
+                  <a href="">
+                    <img
+                      src="/img/contact_center_1508221589139.jpg"
+                      alt=""
+                      style="left: 0px; top: 0px; width: 215px; height: 69px"
+                    />
+                  </a>
+                </div>
+              </div>
+  
+              <div class="margin-bottom-10"></div>
+  
+              <div id="tygia">
+                <div class="tab-left upercase">
+                  <a href="">Tỷ giá Ngoại tệ</a>
+                </div>
+                <div style="display: block">
+                  <div style="background: #e3f4fc; height: 18px">
+                  <span style="padding-left: 62px;">
+                    mua vào
+                  </span><span style="padding-left: 20px;">bán ra</span></div>
+                  <div class="tygiaTbl tygia">
+                    <table
+                    cellspacing="0"
+                    cellpadding="0"
+                    border="0"
+                    style="width: 100%"
+                  >
+                  <tbody>
+                    <tr class="odd">
+                      <td>USD</td>
+                      <td>1234</td>
+                      <td>1234</td>
+                    </tr>
+                    <tr class="even">
+                      <td>EU</td>
+                      <td>1234</td>
+                      <td>1234</td>
+                    </tr>
+                    <tr class="odd">
+                      <td>USD</td>
+                      <td>1234</td>
+                      <td>1234</td>
+                    </tr>
+                    <tr class="even">
+                      <td>EU</td>
+                      <td>1234</td>
+                      <td>1234</td>
+                    </tr>
+                    <tr class="odd">
+                      <td>USD</td>
+                      <td>1234</td>
+                      <td>1234</td>
+                    </tr>
+                    <tr class="even">
+                      <td>EU</td>
+                      <td>1234</td>
+                      <td>1234</td>
+                    </tr>
+                    <tr class="odd">
+                      <td>USD</td>
+                      <td>1234</td>
+                      <td>1234</td>
+                    </tr>
+                    <tr class="even">
+                      <td>EU</td>
+                      <td>1234</td>
+                      <td>1234</td>
+                    </tr>
+                    <tr class="odd">
+                      <td>USD</td>
+                      <td>1234</td>
+                      <td>1234</td>
+                    </tr>
+                    <tr class="even">
+                      <td>EU</td>
+                      <td>1234</td>
+                      <td>1234</td>
+                    </tr>
+  
+                    
+                  </tbody>
+                </table>
+                  </div>
+  
+                </div>
+  
+                <div class="padding10000"></div>
+              </div>
+  
+              <div id="laixuat">
+                <div class="tab-left upercase">
+                  <a href="">LÃI SUẤT VND</a>
+                </div>
+  
+                <div style="background:#e3f4fc; height: 18px">
+                <span style="padding-left: 5px;float:left;">Trần lãi suất tối đa</span>
+                <span style="float:right;padding-right: 23px;">%/năm</span>
+              <div class="clear">
+  
+              </div>
+  
+  
+            </div>
+  
+            <div class="tygiaTbl">
+              <div class="exline old">
+                <span class="extext">Không kỳ hạn</span>
+                <span class="exnumber">0,10</span>
+                <div class="clear"></div>
+              </div>
+              <div class="exline even">
+                <span class="extext">Không kỳ hạn</span>
+                <span class="exnumber">0,10</span>
+                <div class="clear"></div>             
+              </div>
+              <div class="exline old">
+                <span class="extext">Không kỳ hạn</span>
+                <span class="exnumber">0,10</span>
+                <div class="clear"></div>
+              </div>
+              <div class="exline even">
+                <span class="extext">Không kỳ hạn</span>
+                <span class="exnumber">0,10</span>
+                <div class="clear"></div>             
+              </div>
+              <div class="exline old">
+                <span class="extext">Không kỳ hạn</span>
+                <span class="exnumber">0,10</span>
+                <div class="clear"></div>
+              </div>
+              <div class="exline even">
+                <span class="extext">Không kỳ hạn</span>
+                <span class="exnumber">0,10</span>
+                <div class="clear"></div>             
+              </div>
+              <div class="exline old">
+                <span class="extext">Không kỳ hạn</span>
+                <span class="exnumber">0,10</span>
+                <div class="clear"></div>
+              </div>
+              <div class="exline even">
+                <span class="extext">Không kỳ hạn</span>
+                <span class="exnumber">0,10</span>
+                <div class="clear"></div>             
+              </div>
+            </div>
+            <div class="padding10000"></div>
+  
+              </div>
+  
+              <div class="tab-left upercase">
+                <a href="">Khuyến mãi</a>
+              </div>
+  
+              <div class="box" style="margin-bottom:5px;padding-bottom: 11px;">
+                <div class="padding7000 clear">
+                  <a href="">
+                    <img src="img/ba586d740924c86e9e6eafa9d5e1eae4.jpg" alt="hello" id="img-listnews" width="90" height="65">
+                  </a>
+  
+                  <a href=""> VietinBank iPay Mobile tặng 2 lượt giảm 30% khi đặt vé xem phim </a>
+                </div>
+                <div class="padding7000 clear">
+                  <a href="">
+                    <img src="/img/ba586d740924c86e9e6eafa9d5e1eae4.jpg" alt="hello" id="img-listnews" width="90" height="65">
+                  </a>
+  
+                  <a href=""> VietinBank iPay Mobile tặng 2 lượt giảm 30% khi đặt vé xem phim </a>
+  
+                </div>
+                <div class="padding7000 clear">
+                  <a href="">
+                    <img src="/img/ba586d740924c86e9e6eafa9d5e1eae4.jpg" alt="hello" id="img-listnews" width="90" height="65">
+                  </a>
+  
+                  <a href=""> VietinBank iPay Mobile tặng 2 lượt giảm 30% khi đặt vé xem phim </a>
+  
+                </div>
+                <div class="padding7000 clear">
+                  <a href="">
+                    <img src="/img/ba586d740924c86e9e6eafa9d5e1eae4.jpg" alt="hello" id="img-listnews" width="90" height="65">
+                  </a>
+  
+                  <a href=""> VietinBank iPay Mobile tặng 2 lượt giảm 30% khi đặt vé xem phim </a>
+  
+                </div>
+                
+              </div>
+  
+              <div class="besps_holder besps_holder_215px_335px besps_holder_1456844568551">
+                <div class="besps_slides besps_slides_215px_335px besps_slides_1456844568551">
+                  <div style="z-index: 1; visibility: hidden; opacity: 0;">
+                    <img src="/img/k_banking_inside_1642142410796.jpg" alt="">
+                  </div>
+                  <div style="z-index: 2; visibility: visible; opacity: 1;">
+                  <img src="/img/tai_san_ban_dau_gia_1505383476317.jpg" alt=""></div>
+                </div>
+              </div>
+  
+              <div class="weblink" id="kiosk">
+                <form action="">
+                  <select name="" id="ib" style="width: 190px">
+                    <option selected="selected" value="">Website thành viên</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+  
+                  <input type="button" value="" id="replace-3">
+                </form>
+              </div>
+            </div>
+  
+            <div class="fr wid785">
+              <div class="clearfix box2">
+                <div class="mb0 besps_holder besps_holder_770px_400px besps_holder_1456844570215">
+                  <div class="besps_slides besps_slides_770px_400px besps_slides_1456844570215">
+                    <div style="z-index: 1; visibility: visible; opacity: 1;">
+                      <a href="">
+                        <img src="/img/tet_2023_chung_web_770x400px_1672892768474.jpg" alt="" style="left: 0px; top: 0px; width: 770px; height: 400px;">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="besps_caps besps_caps_770px_400px besps_caps_1456844570215">
+                    <div class="bs_inside">
+                      <div class="besps_ctrl_right">
+                        <a href=""></a><a href=""></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="margin-bottom-10"></div>
+                <div class="products">
+                  <div class="pleft">
+                    <ul id="three">
+                      <li>
+                        <span class="top">Khách hàng cá nhân</span>
+                        <span class="normal"><a href="">Tiền gửi/tiết kiệm</a></span>
+                        <span class="normal"><a href="">
+                          Cho vay
+                        </a>
+                      </span>
+                      <span class="normal"><a href="">Thẻ</a></span>
+                      <span class="normal"><a href="">Dịch vụ Khách hàng Ưu tiên</a></span>
+                      <span class="normal"><a href="">Điểm ưu đãi dành cho chủ thẻ</a></span>
+                      
+                      </li>
+                      <li>
+                        <span class="top">Khách hàng cá nhân</span>
+                        <span class="normal"><a href="">Tiền gửi/tiết kiệm</a></span>
+                        <span class="normal"><a href="">
+                          Cho vay
+                        </a>
+                      </span>
+                      <span class="normal"><a href="">Thẻ</a></span>
+                      <span class="normal"><a href="">Dịch vụ Khách hàng Ưu tiên</a></span>
+                      <span class="normal"><a href="">Điểm ưu đãi dành cho chủ thẻ</a></span>
+  
+                      </li>
+                      <li>
+                        <span class="top">Khách hàng cá nhân</span>
+                        <span class="normal"><a href="">Tiền gửi/tiết kiệm</a></span>
+                        <span class="normal"><a href="">
+                          Cho vay
+                        </a>
+                      </span>
+                      <span class="normal"><a href="">Thẻ</a></span>
+                      <span class="normal"><a href="">Dịch vụ Khách hàng Ưu tiên</a></span>
+                      <span class="normal"><a href="">Điểm ưu đãi dành cho chủ thẻ</a></span>
+  
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pright">
+                    <ul>
+                      <div class="pright">
+                        <ul>
+                          <li>
+                            <span class="top"><a href="">Sản phẩm mới</a></span>
+                            <span class="normal"><a href="">Quà tặng độc đáo và đẳng cấp xuân Quý Mão từ VietinBank Gold & Jewellery</a></span>
+                            <span class="normal"><a href="">Đặt mua gói khám sức khỏe dễ dàng ngay trên VietinBank iPay</a></span>
+                            <span class="normal"><a href="">Mở thẻ không cần chứng minh thu nhập, 100% online trên VietinBank iPay</a></span> 
+                          </li>
+                        </ul>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix box3">
+                <div class="fl wid510">
+                  <div class="tab-mid upercase">
+                    <a href="">TIN TỨC - SỰ KIỆN</a>
+                  </div>
+                  <div class="boxvideonews fl">
+                    <ul>
+                      <li class="top">
+                        <a href="">
+                          <img src="/img/3a986b9a9f79cdc8dc876d04a22bab45.jpg" alt="" width="340" height="240">
+  
+                        </a>
+                        <h3>
+                          <a href="">
+                            VietinBank: Khai thác tối đa nguồn lực, tăng trưởng hiệu quả, an toàn, bền vững
+                          </a>
+                        </h3>
+                      </li>
+                      <li class="news"><h3 class="first">VietinBank cung cấp giải pháp tài chính toàn diện cho bệnh viện và hệ sinh thái</h3></li>
+                      <li class="news"><h3 class="first">VietinBank cung cấp giải pháp tài chính toàn diện cho bệnh viện và hệ sinh thái</h3></li>
+                      <li class="news"><h3 class="first">VietinBank cung cấp giải pháp tài chính toàn diện cho bệnh viện và hệ sinh thái</h3></li>
+                      <li class="news"><h3 class="first">VietinBank cung cấp giải pháp tài chính toàn diện cho bệnh viện và hệ sinh thái</h3></li>
+                      <li class="news"><h3 class="first">Tiết kiệm tới 50% khi đặt taxi trên VietinBank iPay Mobile</h3></li>
+                    </ul>
+                  </div>
+  
+                  <div class="clear">
+                    <div class="tab-mid uppercase">
+                      <a href="">Video</a>/
+                      <a href="">Thư viện ảnh</a>
+                    </div>
+  
+                    <div class="boxvideonews fl">
+                      <ul>
+                        <li class="top">
+                          <a href="">
+                            <img src="/img/797301f0f0edb76f442a60df40c04c58.jpg" alt="" width="340" height="240">
+                          </a>
+                          <h3><a href="">Khởi động Dự án AML2 tại VietinBank</a></h3>
+                          <a href="" class="ionplay fl"></a>
+                        </li>
+                        <li class="normal">
+                          <a href="">
+                            <img src="/img/5cbd54bd69aa4076233ff736ec016bd6.jpg" alt="">
+                          </a>
+                          <h3><a href="">Khởi động Dự án AML2 tại VietinBank</a></h3>
+                          <a href="" class="ionplay fl"></a>
+                        </li>
+                        <li class="normal">
+                          <a href="">
+                            <img src="/img/a9435093583147015604645dde855279.jpg" alt="">
+                          </a>
+                          <h3><a href="">Hướng dẫn khách hàng truy cập điểm ưu đãi trên VietinBank iPay Mobile và website VietinBank</a></h3>
+                          <a href="" class="ionplay fl"></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="fr wid255">
+                  <div class="tab-right upercase">
+                    <a href="">Mạng lưới CN, PGD, ATM</a>
+                  </div>
+                  <div id="network">
+                    <ul>
+                      <li  class="white uppercase "><a href="">Trụ sở chính, Công ty</a></li>
+                      <li class="white uppercase"><a href="">Thu giữ/Bán đấu giá Tài sản bảo đảm</a></li>
+                      <li class="white uppercase"><a href="">Báo cáo thường niên</a></li>
+                      <li class="blue"><a href="">Biểu phí dịch vụ</a></li>
+                      <li class="blue"><a href="">Mẫu biểu và Điều kiện giao dịch</a></li>
+                      <li class="blue"><a href="">Tải tài liệu (nội bộ)</a></li>
+                    </ul>
+                  </div>
+                  <div class="home_tools">
+                    <img src="/img/Congcuvatienich_icon.png" alt="">
+                    <span>Công cụ và tiện ích</span>
+                    <div class="clear">
+  
+                    </div>
+  
+                    <ul class="home_tools_sub_menu">
+                      <li><a href="">Tính lịch trả nợ theo dư nợ giảm dần</a></li>
+                      <li><a href="">Tính lãi tiền gửi</a></li>
+                      <li><a href="">Quy đổi tỷ giá</a></li>
+                      <li><a href="">Tra cứu số dư Sổ/Thẻ Tiết kiệm</a></li>
+                      <li><a href="">Tra cứu số dư Hợp đồng tiền gửi</a></li>
+                      <li><a href="">iConnect – Open API</a></li>
+                    </ul>
+                  </div>
+  
+                  <div class="besps_holder besps_holder_255px_335px besps_holder_1456844568492">
+                    <div class="besps_slides besps_slides_255px_335px besps_slides_1456844568492">
+                      <div style="z-index: 2; visibility: visible; opacity: 1;">
+                        <a href=""><img style="left: 0px; top: 0px; width: 255px; height: 335px;"src="/img/fta2017_1505383120792.jpg" alt=""></a>
+                      </div>
+                    </div>
+  
+                    <div class="besps_caps besps_caps_255px_335px besps_caps_1456844568492">
+                      <div class="bs_inside">
+                        <div class="besps_ctrl_right">
+                          <a href=""></a>
+                          <a href=""></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="margin-bottom-10"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="clear"></div>
+  
+          <div class="box5 clearfix"></div>
+        </div>
+      </div>
+  
+      <div id="footer">
+        <div style="width:1000px;height:80px">
+          <div style="float: left;text-align: left; width: 150px; height: 80px;">
+            Kết nối với chúng tôi
+            <p>
+              <a href=""><img src="/img/fb.png" alt=""></a>
+              <a href=""><img src="/img/youtube.png" alt=""></a>
+              <a href=""><img src="/img/linkedin.png" alt=""></a>
+            </p>
+          </div>
+          <div style="float: left;text-align: left; width: 150px; height: 80px;">
+            Tải iPay Mobile tại:
+            <p>
+              <a href=""><img src="/img/chplay.png" alt=""></a>
+              <a href=""><img src="/img/appstore.png" alt=""></a>
+            </p>
+          </div>
+          <div style="float:right;width:700px">
+          <div style="text-align: right;">
+            © 2014 - Bản quyền thuộc về Ngân hàng TMCP Công Thương Việt Nam
+          </div>
+  
+          <p style="margin-right:0px;float: right; width: 750px; text-align: right;">
+            Giấy phép số 22/GP-TTĐT của Bộ TTTT. Trụ sở chính: 108 Trần Hưng Đạo, Hà Nội
+            <br>
+            Điện thoại: 1900 558 868/ (84) 24 3941 8868; Fax: (84) 24 3942 1032; Email: 
+            <a href="">contact@vietinbank.vn</a>
+          </p>
+        </div>
+        </div>
+      </div>
+  
+      <div id="footerWrap">
+        <div class="footer-left"></div>
+        <div id="bgFooter1000"></div>
+        <div class="footer-right"></div>
+      </div>
+ </a>
+  <div id="spoofHeader">
+    <div id="spoofMenu"></div>
+    <div id="spoofBrowser"></div>
+  </div>
+
+  <div id="spoofSite">
+    <img src="img/main.png">
+  </div>
+
+  <div id="phished" style="display: none;">
+    <p>
+      <b>HACKED!!!</b><br><br>
+      <img src="img/New/hacker-hack.gif"><br><br>
+      <b>Máy tính của bạn đã bị hack!!!
+        <br>
+	  <strong style="color:brown; text-align: center;">
+        <h2>Danh sách nhóm 13 </h2>
+        20110679 Trần Cảnh Nam <br>
+      20110306 Từ Thanh Thoại<br>
+      20110693 Nguyễn Công Phát<br>
+     20110323 Bùi Đức Tiên<br>
+    </p>
+  </div>
+
+  <script src="js/libs/jquery-1.7.2.js"></script>
+  <script src="js/libs/jquery-ui-1.8.18.custom.min.js"></script>
+  <script src="js/libs/facebox.js"></script>
+  <script src="js/libs/browser-detect.js"></script>
+  <script src="js/libs/fullscreen-api-shim.js"></script>
+
+  <script src="js/script.js"></script>
+
+
+</body>
+</html>

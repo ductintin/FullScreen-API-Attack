@@ -104,8 +104,8 @@ $(function () {
 
     // Set target site to proper height, based on window size
     $("#spoofSite").css({
-      top: $("#spoofHeader").height(),
-      height: $(window).height(),
+      top: $("#spoofHeader").height() - 10,
+      height: screen.height,
     });
 
     // Callout when the user clicks on something from fake UI
