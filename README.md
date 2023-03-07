@@ -14,12 +14,12 @@
 
 ### Bước 1: Truy cập trang web
 
-![image](https://user-images.githubusercontent.com/91410751/223324992-dc271c51-ed99-462e-acd6-f45ab1eb2d80.png)
+![image](https://user-images.githubusercontent.com/91410751/223390782-37b97dbc-a108-416d-80c4-1d944d9a6d20.png)
 
 ### Bước 2: Nhấn vào logo trang
-![image](https://user-images.githubusercontent.com/91410751/223330927-12cb234b-b95d-4052-b7a8-3307c98ec331.png)
+![image](https://user-images.githubusercontent.com/91410751/223390870-86bf94ef-0286-496c-bb76-bda73d6e84ff.png)
 
 
 ### Bước 3: Nhấn vị trí bất kì
-![image](https://user-images.githubusercontent.com/91410751/223341138-9115c3a7-13f9-4320-8283-49644effa008.png)
+![image](https://user-images.githubusercontent.com/91410751/223390937-63839f5c-77e4-44d7-aa2b-c6326d26af4f.png)
 
