@@ -45,6 +45,9 @@ body {
   width: 100%;
 }
 
+#spoofSite img {
+  object-fit: cover;
+}
 /* Menu (OS X only) */
 
 .osx #spoofMenu {
@@ -83,8 +86,8 @@ body {
 }
 
 .chrome.windows #spoofBrowser {
-  background: url(../img/navbar.png) no-repeat;
-  height: 100px;
+  background: url(../img/navigation.png) no-repeat;
+  height: 80px;
 }
 
 .chrome.linux #spoofBrowser {

@@ -19,7 +19,7 @@ function requestFullScreen() {
 
 function playFailSound() {
   $("body").append(
-    '<audio preload="auto" autoplay><source src="sound/hacker_laugh.mp3" /></audio>'
+    '<audio preload="auto" autoplay><source src="sound/mario-death.mp3" /><source src="sound/mario-death.ogg" /></audio>'
   );
 }
 
@@ -104,8 +104,8 @@ $(function () {
 
     // Set target site to proper height, based on window size
     $("#spoofSite").css({
-      top: $("#spoofHeader").height(),
-      height: screen.height,
+      top: $("#spoofHeader").height() - 10,
+      height: screen.height - 70,
     });
 
     // Callout when the user clicks on something from fake UI
