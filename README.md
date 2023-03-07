@@ -21,5 +21,5 @@
 
 
 ### Bước 3: Nhấn vị trí bất kì
-![image](https://user-images.githubusercontent.com/91410751/223330937-aa301c5c-c3b1-4af4-a6b3-ea298d11d8a5.png)
+![image](https://user-images.githubusercontent.com/91410751/223341138-9115c3a7-13f9-4320-8283-49644effa008.png)
 
