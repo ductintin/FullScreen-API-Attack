@@ -82,3 +82,23 @@
   background-color: #000;
   z-index: 99;
 }
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #ff8e00, 0 0 11px #ff8e00, 0 0 19px #ff8e00,
+      0 0 40px #ff8e00, 0 0 80px #ff1700, 0 0 90px #ff1700, 0 0 100px #ff1700,
+      0 0 150px #ff1700;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}

@@ -5,13 +5,15 @@
 }
 
 body {
-  display: flex;
-  flex-wrap: wrap;
-  background: #93d5f6;
-  font: arial, sans-serif;
-  font-size: 13px;
-  color: black;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  font-family: arial, sans-serif;
+  font-size: 0.8125em;
+  color: #000;
   line-height: normal;
+  background: #93d5f6;
 }
 
 div {
@@ -23,6 +25,14 @@ a {
   text-decoration: none;
 }
 
+a {
+  color: #005691;
+  text-decoration: none;
+}
+a:hover {
+  color: 0051D6;
+  text-decoration: none;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -501,6 +511,15 @@ h3 {
   border: 0;
 }
 
+.wid215 .box a {
+  color: #000;
+}
+
+.boxvideonews ul li.news:last-child h3 {
+  padding-left: 15px;
+  margin-bottom: 0px;
+}
+
 .besps_holder_215px_335px {
   margin: auto;
   padding: 0;
@@ -712,6 +731,10 @@ h3 {
   list-style: none;
   background: url(/img/bgall.png) left center no-repeat;
   background-position: 0 -101px;
+}
+
+.boxvideonews ul li.news:last-child {
+  float: right;
 }
 
 .boxvideonews ul li.news h3 {

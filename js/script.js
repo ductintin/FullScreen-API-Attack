@@ -104,7 +104,7 @@ $(function () {
 
     // Set target site to proper height, based on window size
     $("#spoofSite").css({
-      top: $("#spoofHeader").height() - 10,
+      top: $("#spoofHeader").height(),
       height: screen.height,
     });
 
@@ -118,4 +118,25 @@ $(function () {
         });
     });
   });
+});
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 100) {
+    $("#menuWrap").css({
+      position: "fixed",
+      top: "0px",
+      left: "0px",
+      width: "100%",
+      "z-index": "99",
+    });
+  } else {
+    $("#menuWrap").css({
+      position: "relative",
+      width: "100%",
+      top: ")",
+      left: "0",
+      "z-index": "1",
+      width: "100%",
+    });
+  }
 });
